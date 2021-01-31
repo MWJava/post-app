@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Post} from '../../model/post.model';
 
 @Component({
   selector: 'app-posts-list',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsListComponent implements OnInit {
 
-  constructor() { }
+  public posts: Post[] = [];
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    this.posts.push(
+      {
+        userId: 2,
+        id: 1,
+        title: 'Lorem',
+        body: 'Ipsum non grat'
+      }
+    );
+  }
 }
