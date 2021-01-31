@@ -1,3 +1,8 @@
+<h2 class="container-fluid">Here you can check the temperature in the selected city, just enter the city name and press
+  the
+  <strong class="border">Check weather!</strong> button!</h2>
+<br>
+<br>
 <form [formGroup]="weatherForm" (ngSubmit)="onSubmit()">
 
   <label>
@@ -5,7 +10,7 @@
     <input type="text" formControlName="cityName">
   </label>
 
-  <button type="submit">Check weather</button>
+  <button type="submit">Check weather!</button>
 </form>
 
-Temp: {{temp}}
+Current city temp: {{temp + '℃'}}

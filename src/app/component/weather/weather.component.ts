@@ -20,7 +20,7 @@ export class WeatherComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const city = 'Warszawa';
+    const city = '';
     this.getWeatherByCityName(city);
   }
 
